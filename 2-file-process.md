@@ -47,7 +47,7 @@ git reset --hard 362816  # 若已经回退到上一版本，又后悔了，又�
 # 版本号不用输入全部，只需要输入前面的几位让git得以区分就行了
 ```
 
-6. git reflog -- 显示之前的每一次命令，并且会带有版本号
+6.git reflog -- 显示之前的每一次命令，并且会带有版本号
 ```bash
 git reflog
 ea34578 HEAD@{0}: reset: moving to HEAD^
@@ -66,3 +66,9 @@ git checkout -- readme.txt
 一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
 一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
 总之，就是让这个文件回到最近一次git commit或git add时的状态
+
+9.git rm filename -- 删除文件
+```bash
+git rm test.txt
+git commit -m "remove test.txt"  # 要从版本库中删除，那么记得执行git commit
+```
