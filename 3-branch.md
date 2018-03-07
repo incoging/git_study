@@ -35,3 +35,14 @@ git stash apply stash@{0} # 恢复之前存储的工作stash@{0}，但是此时�
 git stash drop  # 删除存储的工作状态。
 git stash pop  # 恢复工作之前存储的工作状态，并删除存储
 ```
+
+6.git diff -- 查看文件修改内容
+
+7.git push -- 推送本地分支到远程苦
+```bash
+git remote -v  # 查看远程库信息 -v是显示详细信息。
+git push origin branch_name  # 推送本地的一个分支到远程库
+git pull 从远程库抓取内容
+git check -b branch_name origin/branch_name  # 在本地创建和远程分支对应的分支
+git branch --set-upstream local_branch_name origin/branch_name  # 将本地的分支和远程的分支关联起来
+```
