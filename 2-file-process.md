@@ -5,8 +5,11 @@ tonight studied github.  # readme文件内容
 git add readme.md  # 将文件添加到暂存区
 git commit -m "wrote a readme file"  # 将文件提交到仓库，其中-m string 是添加说明。
 ```
+>git add 是把文件添加到暂存区。   
+git commit 把当前暂存区的所有内容提交到当前分支。   
+之后再使用git push origin master 是把当前master分支推送到远程的origin仓库中去。 
 
-2.git status -- 查看当前仓库状态
+2.git status -- 查看当前工作区和版本库的状态
 
 3.git diff -- 查看文件修改了什么内容
 ```bash
@@ -32,11 +35,16 @@ commit cb926e7ea50ad11b8f9e909c05226233bf755030
 Author: Michael Liao <askxuefeng@gmail.com>
 Date:   Mon Aug 19 17:51:55 2013 +0800
 ```
+>加参数1：--pretty-onleine
 ```bash
 git log --pretty=oneline  # 加上后面参数可以简洁输出
 3628164fb26d48395383f8f31179f24e0882e1e0 append GPL
 ea34578d5496d7dd233c827ed32a8cd576c5ee85 add distributed
 cb926e7ea50ad11b8f9e909c05226233bf755030 wrote a readme file
+```
+>加参数2：--graph
+```bash
+git log --graph  # 可以查看分支合并情况
 ```
 
 5.git reset -- 回退到以前版本
