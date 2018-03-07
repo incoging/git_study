@@ -38,7 +38,7 @@ git stash pop  # 恢复工作之前存储的工作状态，并删除存储
 
 6.git diff -- 查看文件修改内容
 
-7.git push -- 推送本地分支到远程苦
+7.git push -- 推送本地分支到远程库
 ```bash
 git remote -v  # 查看远程库信息 -v是显示详细信息。
 git push origin branch_name  # 推送本地的一个分支到远程库
