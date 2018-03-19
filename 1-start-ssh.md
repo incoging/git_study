@@ -1,5 +1,5 @@
-####两种方法：
-#####使用SSH or 使用HTTPS(此方法直接跳转步骤3)
+#### 两种方法：
+##### 使用SSH or 使用HTTPS(此方法直接跳转步骤3)
 1.创建SSH Key,在用户主目录下，看看有没有.ssh目录(一般是隐藏文件，用ls -a 查看)，且子目录中是否由id_rsa和
 id_rea.pub这两个文件，若有跳过这一步，若没有，执行下面命令:
 ```bash
@@ -29,5 +29,5 @@ git init
 git remote add origin git@github.com:username/git_study.git  # origin是远程库的名字
 git push -u origin master  # 把当前的master分支推送到远程库，
 # 第一次推送master分支时加上了-u，以后不必。
-#第一次连接github时可能会由ssh的警告提示，无需管理。
+# 第一次连接github时可能会由ssh的警告提示，无需管理。
 ```

@@ -1,4 +1,4 @@
-####分支管理
+#### 分支管理
 1.git checkout -b -- 创建并切换到对应分支
 ```bash
 git checkout -b dev  # 创建并切换到dev分支
