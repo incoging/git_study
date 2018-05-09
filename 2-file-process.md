@@ -19,7 +19,14 @@ git commit -m "wrote a readme file"  # 将文件提交到仓库，其中-m strin
 
 >git add 是把文件添加到暂存区。   
 git commit 把当前暂存区的所有内容提交到当前分支。   
-之后再使用git push origin master 是把当前master分支推送到远程的origin仓库中去。 
+之后再使用git push origin master 是把当前master分支推送到远程的origin仓库中去。
+
+除非有新文件可以添加，不然可以直接使用
+```
+# -am 一定意义上表示add 和commit的合并使用，但是这个不会track到新文件
+git commit -am "some str"
+git push
+```
 
 ##### git add -A 和git add . 的区别
 * git add . ：他会监控工作区的状态树，使用它会把工作时的**所有变化**提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件。
