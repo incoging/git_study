@@ -9,8 +9,6 @@ Git的版本库里有一个称为stage（或者叫index）的暂存区，
 
 ![avatar](data/stage.jpg)
 
-
-
 ##### 推送文件
 ```bash
 vim readme.md
@@ -89,8 +87,6 @@ ea34578 HEAD@{0}: reset: moving to HEAD^
 ea34578 HEAD@{2}: commit: add distributed
 cb926e7 HEAD@{3}: commit (initial): wrote a readme file
 ```
-
-##### git status -- 查看当前仓库状态
 
 ##### git checkout -- filename -- 丢弃工作区修改
 ```bash
