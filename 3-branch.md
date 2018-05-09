@@ -15,11 +15,20 @@ git checkout dev  # 切换分支到dev,即把当前分支设置为dev
 ```bash
 git merge dev  # 当前在master分支，这句命令是把dev分支合并到master分支上。
 ```
+
 >强制禁用Fast forward模式，Git会生成一个新的commit，从分支历史上就可以看出分支信息。
+
 ```bash
 git merge --no--ff -m "merge with no--ff" dev  # 禁用Fast forward模式，因为要创建一个新的
 # commit， 所以加上-m 参数，并把描述写进去。
 ```
+
+当两个分支有完全不同的提交历史时，强行合并分支
+```
+git merge dev --allow-unrelated-histories
+```
+> 输入完后，会进入vim，这时你就只需输入你这次commit的补充信息
+
 
 4.git branch -d -- 删除分支
 ```bash
