@@ -1,4 +1,4 @@
-##### .gitignore -- 忽略一部分文件
+##### 1..gitignore -- 忽略一部分文件
 
 在Git工作区的根目录下创建一个.gitignore文件，把要忽略的文件名填进去，Git就会自动忽略这些文件。
 **在windows下建立.gitignore文件时** 如果你在资源管理器里新建一个.gitignore文件，它会提示你必须输入文件名，
@@ -36,14 +36,14 @@ Use -f if you really want to add them.
 $ git add -f test.class
 ```
 
-##### git check-ignore 命令检查
+##### 2.git check-ignore 命令检查
 ```
 $ git check-ignore -v test.class
 .gitignore:5:*.class    test.class
 ```
 会提示我们：.gitignore的第5行规则忽略了该文件，这就可以知道应该修订哪个规则了。
 
-##### 配置别名
+##### 3.配置别名
 
 1.为status配置别名st,这样就可以用git st 代替git status
 ```
@@ -57,7 +57,7 @@ $ git config --global alias.last 'log -1'
 ```
 
 
-##### 配置文件
+##### 4.配置文件
 
 配置Git的时候，加上--global是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。
 
